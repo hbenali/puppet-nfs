@@ -13,7 +13,7 @@
 
 ## Module Description
 
-Github Master: [![Test Suite](https://github.com/hbenalitn/puppet-nfs/actions/workflows/test-suite.yaml/badge.svg?branch=master)](https://github.com/hbenalitn/puppet-nfs/actions/workflows/test-suite.yaml)
+Github Master: [![Test Suite](https://github.com/hbenali/puppet-nfs/actions/workflows/test-suite.yaml/badge.svg?branch=master)](https://github.com/hbenalitn/puppet-nfs/actions/workflows/test-suite.yaml)
 
 This module installs, configures and manages everything on NFS clients and servers.
 
