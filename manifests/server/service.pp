@@ -40,7 +40,7 @@ class nfs::server::service {
         hasrestart => $::nfs::server_service_hasrestart,
         hasstatus  => $::nfs::server_service_hasstatus,
         restart    => $::nfs::server_service_restart_cmd,
-        subscribe  => [ Concat[$::nfs::exports_file], Augeas[$::nfs::idmapd_file] ],
+        subscribe  => [ Concat_File[$::nfs::exports_file], Augeas[$::nfs::idmapd_file] ],
         require    => $server_service_require,
       }
     }
@@ -53,7 +53,7 @@ class nfs::server::service {
         hasrestart => $::nfs::server_service_hasrestart,
         hasstatus  => $::nfs::server_service_hasstatus,
         restart    => $::nfs::server_service_restart_cmd,
-        subscribe  => Concat[$::nfs::exports_file],
+        subscribe  => Concat_File[$::nfs::exports_file],
       }
     }
 

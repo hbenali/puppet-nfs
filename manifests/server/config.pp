@@ -16,7 +16,7 @@
 
 class nfs::server::config {
 
-  concat { $::nfs::exports_file:
+  concat_file { $::nfs::exports_file:
     ensure  => present,
   }
 
