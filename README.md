@@ -1,11 +1,11 @@
-# nfs
+# nfs (fork from [derdanne/puppet-nfs](https://github.com/derdanne/puppet-nfs) and [UCSD-ANF/puppet-nfs](https://github.com/UCSD-ANF/puppet-nfs))
 
 #### Table of Contents
 1. [Module Description - What the module does and why it is useful](#module-description)
-2. [Setup - The basics of getting started with derdanne-nfs](#setup)
-    * [What derdanne-nfs affects](#what-derdanne-nfs-affects)
+2. [Setup - The basics of getting started with hbenalitn-nfs](#setup)
+    * [What hbenalitn-nfs affects](#what-hbenalitn-nfs-affects)
     * [Setup requirements](#setup-requirements)
-    * [Beginning with derdanne-nfs](#beginning-with-derdanne-nfs)
+    * [Beginning with hbenalitn-nfs](#beginning-with-hbenalitn-nfs)
 3. [Usage - Configuration options and additional functionality](#usage)
 4. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 5. [Limitations - OS compatibility, etc.](#limitations)
@@ -13,7 +13,7 @@
 
 ## Module Description
 
-Github Master: [![Test Suite](https://github.com/derdanne/puppet-nfs/actions/workflows/test-suite.yaml/badge.svg?branch=master)](https://github.com/derdanne/puppet-nfs/actions/workflows/test-suite.yaml)
+Github Master: [![Test Suite](https://github.com/hbenalitn/puppet-nfs/actions/workflows/test-suite.yaml/badge.svg?branch=master)](https://github.com/hbenalitn/puppet-nfs/actions/workflows/test-suite.yaml)
 
 This module installs, configures and manages everything on NFS clients and servers.
 
@@ -24,10 +24,10 @@ and 'client_enabled'. It also has some dependencies on newer stdlib functions li
 
 It supports the OS Families Ubuntu, Debian, Redhat, SUSE, Gentoo and Archlinux. It supports also Strict Variables, so if you pass all
 OS specific parameters correctly it should work on your preferred OS too. Feedback, bugreports,
-and feature requests are always welcome, visit https://github.com/derdanne/puppet-nfs or send me an email.
+and feature requests are always welcome, visit https://github.com/hbenalitn/puppet-nfs or send me an email.
 
 When you are using a puppet version 3.x like it is shipped with Redhat Satellite 6, please use a version 1.x.x from puppet forge 
-or the branch puppet3 when cloning directly from Github. (Note: https://github.com/derdanne/puppet-nfs/pull/49#issuecomment-285091678). 
+or the branch puppet3 when cloning directly from Github. (Note: https://github.com/hbenalitn/puppet-nfs/pull/49#issuecomment-285091678). 
 I'll recommend using puppet >= 4.6.1, puppet versions up until 4.6.0 had various issues.
 
 If you want to contribute, please do a fork on github, create a branch "feature name" with your
@@ -40,7 +40,7 @@ Warning: I've introduced new dependencies with version 2.1.0 which were needed t
 
 ## Setup
 
-### What derdanne-nfs affects
+### What hbenalitn-nfs affects
 
 This module can be used to configure your nfs client and/or server, it could export 
 nfs mount resources via storeconfigs or simply mount nfs shares on a client. You can 
@@ -49,9 +49,9 @@ also easily use the create_resources function when you store your exports i.e. v
 ### Setup requirements
 
 This Module depends on puppetlabs-stdlib >= 4.5.0 and puppetlabs-concat >= 1.1.2, you need to
-have these modules installed to use derdanne-nfs module.
+have these modules installed to use hbenalitn-nfs module.
 
-### Beginning with derdanne-nfs
+### Beginning with hbenalitn-nfs
 
 On a nfs server the following code is sufficient to get all packages installed and services
 running to use nfs:
@@ -753,7 +753,7 @@ module (use manage_packages => false). It is only tested to use 'present', 'inst
 ## Development
 
 Derdanne modules are open projects. So if you want to make this module even better,
-you can contribute to this module on [Github](https://github.com/derdanne/puppet-nfs).
+you can contribute to this module on [Github](https://github.com/hbenalitn/puppet-nfs).
 
 Before pushing PRs to Github i would recommend you to test your work locally. So you can ensure all test builds
 on Travis CI were passing. I have prepared an easy way to test your code locally with the help of Docker. 
@@ -791,7 +791,7 @@ You can run the following commands to setup and run the testsuite on your local 
 #### `make build`
 
 Build a docker image with a Ruby version which is not available on Docker hub. Check out 
-`https://hub.docker.com/r/derdanne/rvm/` to see if i have already prepared a rvm build for the ruby version
+`https://hub.docker.com/r/hbenalitn/rvm/` to see if i have already prepared a rvm build for the ruby version
 you want to test. Take a look at the Dockerfile located in `spec/local-testing` if you want to customize
 your builds.
 

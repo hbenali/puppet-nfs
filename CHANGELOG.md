@@ -183,7 +183,7 @@
 ### Summary
 
 #### Features
-- drop puppet 3 support on master branch (note: https://github.com/derdanne/puppet-nfs/pull/49#issuecomment-285091678)
+- drop puppet 3 support on master branch (note: https://github.com/hbenalitn/puppet-nfs/pull/49#issuecomment-285091678)
 - apply additional rubocop rules
 - replace all validate functions with datatypes
 
@@ -269,7 +269,7 @@
 #### Bugfixes
 - update client mount to use relative devicename to "fsid=root" in nfs v4
 - update client mount spec tests
-- fix https://github.com/derdanne/puppet-nfs/issues/19
+- fix https://github.com/hbenalitn/puppet-nfs/issues/19
 - update gentoo default $client_nfsv4_fstype to reflect syntax update in net-fs/nfs-utils
 
 ## 2015-11-26 - Release 0.0.10

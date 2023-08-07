@@ -196,7 +196,7 @@
 #
 # === Examples
 #
-# * {Please take a look at} [https://github.com/derdanne/puppet-nfs#examples]
+# * {Please take a look at} [https://github.com/hbenalitn/puppet-nfs#examples]
 #
 #
 # === Links
